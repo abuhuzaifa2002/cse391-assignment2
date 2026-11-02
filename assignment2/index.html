@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSE 391 - Assignment 2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>CSE 391: Assignment 2</h1>
+  <nav id="nav">
+    <a href="#fortune">Fortune</a>
+    <a href="#stopwatch">Stopwatch</a>
+    <a href="#todo">To-Do List</a>
+  </nav>
+</header>
+
+<main>
+  <!-- Question 2: Stopwatch -->
+  <section id="stopwatch" class="view">
+    <h2>Stopwatch</h2>
+    <p class="hint">Counts in steps of 3 seconds and stops at 30.</p>
+    <div id="time" aria-live="polite">0</div>
+    <div class="row">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn">Stop</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </section>
+
+  <!-- Question 3: To-Do List -->
+  <section id="todo" class="view">
+    <h2>To-Do List</h2>
+    <div class="row">
+      <input id="taskInput" type="text" placeholder="Add a task" aria-label="New task">
+      <button id="addBtn">Add task</button>
+    </div>
+    <ul id="taskList"></ul>
+    <p id="emptyMsg" class="hint">No tasks yet. Add one above.</p>
+  </section>
+
+  <!-- Question 1: Fortune generator (just above footer) -->
+  <section id="fortune" class="view">
+    <h2>Your fortune</h2>
+    <div class="fortune-wrap">
+      <blockquote id="fortuneBox"></blockquote>
+      <div class="swatches" id="swatches" aria-label="Fortune box colour themes"></div>
+    </div>
+  </section>
+</main>
+
+<footer>CSE 391 &middot; Programming for the Internet</footer>
+<script src="script.js"></script>
+</body>
+</html>
